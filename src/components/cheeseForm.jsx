@@ -8,6 +8,7 @@ export default function CheeseForm() {
   const [cheeseTexture, setCheeseTexture] = useState("");
   const [cheeseRind, setCheeseRind] = useState("");
   const [milkType, setMilkType] = useState("");
+  const [cheeseChar, setCheeseChar] = useState("");
   const [submitState, setSubmitState] = useState([]);
 
   const handleCheeseNameChange = event => {
@@ -39,6 +40,10 @@ export default function CheeseForm() {
     //setSubmitState({ rind: event.target.value });
   };
 
+  const handleCheeseCharChange = event => {
+    setCheeseChar(event.target.value);
+  };
+
   /*
 
   */
@@ -50,7 +55,8 @@ export default function CheeseForm() {
         flavor_en: cheeseFlavor,
         category_type: cheeseTexture,
         rind_type: cheeseRind,
-        milk_type: milkType
+        milk_type: milkType,
+        characteristics_en: cheeseChar
       }
     ]);
   }
@@ -78,7 +84,7 @@ export default function CheeseForm() {
           />
         </div>
         <div>
-          <label>Cheese Manufacturer</label>
+          <label>Creamery</label>
           <input
             type="text"
             placeholder="Creamery?"
@@ -87,7 +93,7 @@ export default function CheeseForm() {
           />
         </div>
         <div>
-          <label>Cheese Texture</label>
+          <label>Texture</label>
           <select onBlur={handleCheeseTextChange}>
             <option>Hard</option>
             <option>Firm</option>
@@ -97,7 +103,7 @@ export default function CheeseForm() {
             <option>Veined</option>
           </select>
 
-          <label>Milk Type</label>
+          <label>Milk</label>
           <select onBlur={handleMilkTypeChange}>
             <option>Cow</option>
             <option>Goat</option>
@@ -124,6 +130,15 @@ export default function CheeseForm() {
             placeholder="Milky? Or maybe nutty?"
             value={cheeseFlavor}
             onChange={handleCheeseFlavChange}
+          />
+        </div>
+        <div>
+          <label>Characteristics</label>
+          <input
+            type="text"
+            placeholder="Anything unique?"
+            value={cheeseChar}
+            onChange={handleCheeseCharChange}
           />
         </div>
         <button type="submit" onClick={submitStateChange}>

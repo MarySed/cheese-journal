@@ -56,7 +56,8 @@ app.post("/cheeses", async (req, res) => {
       flavor_en: postData[0].flavor_en,
       category_type: postData[0].category_type,
       rind_type: postData[0].rind_type,
-      milk_type: postData[0].milk_type
+      milk_type: postData[0].milk_type,
+      characteristics_en: postData[0].characteristics_en
     }
   ])
     .returning("*")
