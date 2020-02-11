@@ -18,7 +18,8 @@
     "react-scripts": "3.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
