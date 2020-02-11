@@ -129,7 +129,6 @@ export default function CheeseForm() {
             <option>Washed</option>
             <option>Bloomy</option>
             <option>Brushed</option>
-            <option>Brushed</option>
             <option>None</option>
           </select>
         </div>
