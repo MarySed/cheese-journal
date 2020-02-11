@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "../CheeseForm2.css";
 
 export default function CheeseForm() {
   const [cheeseName, setCheeseName] = useState("");
@@ -68,13 +69,11 @@ export default function CheeseForm() {
     });
   };
 
-  console.log(submitState);
-
   return (
     <div>
-      <h1>THE CHEESE FORM</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+      <h2>THE CHEESE FORM</h2>
+      <form onSubmit={handleSubmit} className="formContainer">
+        <div className="field">
           <label>Cheese Name</label>
           <input
             type="text"
@@ -83,13 +82,23 @@ export default function CheeseForm() {
             onChange={handleCheeseNameChange}
           />
         </div>
-        <div>
+        <div className="field">
           <label>Creamery</label>
           <input
             type="text"
             placeholder="Creamery?"
             value={cheeseSrc}
             onChange={handleCheeseSrcChange}
+          />
+        </div>
+
+        <div className="field">
+          <label>Characteristics</label>
+          <input
+            type="text"
+            placeholder="Anything unique?"
+            value={cheeseChar}
+            onChange={handleCheeseCharChange}
           />
         </div>
         <div>
@@ -123,22 +132,14 @@ export default function CheeseForm() {
             <option>None</option>
           </select>
         </div>
-        <div>
+        <div className="field">
           <label>Cheese Flavor</label>
           <input
+            className="flavor"
             type="text"
             placeholder="Milky? Or maybe nutty?"
             value={cheeseFlavor}
             onChange={handleCheeseFlavChange}
-          />
-        </div>
-        <div>
-          <label>Characteristics</label>
-          <input
-            type="text"
-            placeholder="Anything unique?"
-            value={cheeseChar}
-            onChange={handleCheeseCharChange}
           />
         </div>
         <button type="submit" onClick={submitStateChange}>

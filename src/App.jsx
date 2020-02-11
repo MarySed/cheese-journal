@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Cheese App!</h1>
+        <h1>Your Cheese Journal.</h1>
       </header>
       <div>
         <CheeseForm />

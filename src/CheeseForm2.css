@@ -1,0 +1,73 @@
+h2 {
+  color: #e3b04b;
+}
+
+.formContainer {
+  background-color: white;
+}
+
+input {
+  width: 95%;
+  height: 2rem;
+  position: relative;
+  padding: 0px 16px;
+  border: none;
+  border-bottom: 1px solid #e3b04b;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #e3b04b;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  min-width: 125px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  justify-content: left;
+  color: #e3b04b;
+}
+
+select {
+  padding-right: 10px;
+  margin-bottom: 10px;
+  color: #e3b04b;
+}
+
+button {
+  margin-top: 2.4em;
+  background: transparent;
+  border: 2px solid #e3b04b;
+  padding: 1em 4em;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  transition: all 300ms ease;
+  color: #e3b04b;
+}
+
+.flavor {
+  height: 5rem;
+  color: white;
+  background-color: #e3b04b;
+  border: none;
+  text-align: left;
+}
+
+.flavor:focus {
+  outline: #e3b04b solid 0.5px;
+}
+
+.flavor::placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: #e3b04b;
+}

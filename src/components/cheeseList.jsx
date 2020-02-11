@@ -17,6 +17,7 @@ export default function CheeseList() {
 
   return (
     <div>
+      <h2>Work in progress</h2>
       <ol>
         {cheeses.map((cheese, index) => (
           <li val={cheese} key={index}>
