@@ -22,6 +22,7 @@ export default function CheeseList() {
         {cheeses.map((cheese, index) => (
           <li val={cheese} key={index}>
             {cheese.cheese_name_en}
+            {cheese.flavor_en}
           </li>
         ))}
       </ol>

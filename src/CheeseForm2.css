@@ -50,6 +50,20 @@ button {
   position: relative;
   transition: all 300ms ease;
   color: #e3b04b;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: #e3b04b;
+  outline: none;
+}
+
+button:active {
+  color: white;
+  background-color: pink;
+  border: 2px solid pink;
+  outline: none;
 }
 
 .flavor {

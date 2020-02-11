@@ -137,7 +137,7 @@ export default function CheeseForm() {
           <input
             className="flavor"
             type="text"
-            placeholder="Milky? Or maybe nutty?"
+            placeholder="How would you describe the flavor? Wax poetic!"
             value={cheeseFlavor}
             onChange={handleCheeseFlavChange}
           />
