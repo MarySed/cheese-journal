@@ -44,7 +44,7 @@ app.get("/cheeses", async (req, res) => {
   }
 });
 
-app.post("/cheeses", async (req, res) => {
+app.post("/", async (req, res) => {
   const postData = req.body;
   console.log(postData);
   console.log(postData[0].cheese_name_en);
