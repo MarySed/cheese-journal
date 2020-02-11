@@ -21,3 +21,8 @@
 .App-link {
   color: #61dafb;
 }
+
+ul {
+  list-style: none;
+  text-align: left;
+}

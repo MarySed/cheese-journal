@@ -67,6 +67,7 @@ export default function CheeseForm() {
     axios.post("/cheeses", submitState).then(response => {
       console.log(response);
     });
+    document.location.reload();
   };
 
   return (
@@ -86,7 +87,7 @@ export default function CheeseForm() {
           <label>Creamery</label>
           <input
             type="text"
-            placeholder="Creamery?"
+            placeholder="Who made dis?"
             value={cheeseSrc}
             onChange={handleCheeseSrcChange}
           />
@@ -96,7 +97,7 @@ export default function CheeseForm() {
           <label>Characteristics</label>
           <input
             type="text"
-            placeholder="Anything unique?"
+            placeholder="Anything unique? Organic cheese is pretty unique."
             value={cheeseChar}
             onChange={handleCheeseCharChange}
           />

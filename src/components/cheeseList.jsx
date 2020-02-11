@@ -1,31 +1,20 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import "../CheeseList.css";
 
-export default function CheeseList() {
-  const [loading, setLoading] = useState(true);
-  const [cheeses, setCheese] = useState([]);
-
-  useEffect(() => {
-    axios.get("/cheeses").then(res => {
-      setCheese(res.data);
-      setLoading(false);
-      if (loading === false) {
-        console.log(cheeses);
-      }
-    });
-  }, [loading]);
+export default function CheeseList(props) {
+  console.log(props.cheeses);
 
   return (
-    <div>
-      <h2>Work in progress</h2>
-      <ol>
-        {cheeses.map((cheese, index) => (
-          <li val={cheese} key={index}>
-            {cheese.cheese_name_en}
-            {cheese.flavor_en}
-          </li>
-        ))}
-      </ol>
+    <div className="cheese-data">
+      <li>{props.cheeses.id}</li>
+      <li>{props.cheeses.cheese_name_en}</li>
+      <li>{props.cheeses.cheese_name_fr}</li>
+      <li>{props.cheeses.manufacturer_name_en}</li>
+      <li>{props.cheeses.flavor_en}</li>
+      <li>{props.cheeses.characteristics_en}</li>
+      <li>{props.cheeses.category_type}</li>
+      <li>{props.cheeses.milk_type}</li>
+      <li>{props.cheeses.rind_type}</li>
     </div>
   );
 }
