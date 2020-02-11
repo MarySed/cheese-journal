@@ -1,19 +1,19 @@
 .cheese-form-div {
-  background-color: #e3b04b;
+  background-color: transparent;
 }
 
 h2 {
   color: black;
-  background-color: #e3b04b;
+  background-color: transparent;
 }
 
 .formContainer {
-  background-color: #e3b04b;
+  background-color: transparent;
 }
 
 input {
   background-color: transparent;
-  width: 95%;
+  width: 93%;
   height: 2rem;
   position: relative;
   padding: 0px 16px;

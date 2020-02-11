@@ -3,7 +3,6 @@
 }
 
 .App-header {
-  background-color: #e3b04b;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +17,9 @@
   padding-bottom: 3px;
 }
 
+h1:hover {
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -25,11 +27,6 @@
 ul {
   list-style: none;
   text-align: left;
-}
-
-.form-container {
-  background-color: green;
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 }
 
 .cheese-res-button {
@@ -65,7 +62,13 @@ ul {
 }
 
 .yellow-display {
-  background-color: #e3b04b;
+  background-color: #e4ff6d;
+  background-image: linear-gradient(
+    319deg,
+    #e4ff6d 0%,
+    #ffad42 37%,
+    #e4ff6d 100%
+  );
 }
 
 .test {
