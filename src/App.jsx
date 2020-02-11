@@ -37,7 +37,7 @@ export default function App() {
             <div className="test"></div>
             <div className="cheese-res-button">
               <button onClick={handleCheeseRes} className="list-showing-button">
-                Explore more cheese!
+                Hide the cheese!
               </button>
             </div>
           </div>
