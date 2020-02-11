@@ -71,7 +71,7 @@ export default function CheeseForm() {
   };
 
   return (
-    <div>
+    <div className="cheese-form-div">
       <h2>THE CHEESE FORM</h2>
       <form onSubmit={handleSubmit} className="formContainer">
         <div className="field">

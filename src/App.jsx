@@ -27,13 +27,20 @@ export default function App() {
     <div className="App">
       {showList ? (
         <React.Fragment>
-          <header className="App-header">
-            <h1>Your Cheese Journal.</h1>
-          </header>
-          <div>
-            <CheeseForm />
+          <div className="yellow-display">
+            <header className="App-header">
+              <h1>Your Cheese Journal.</h1>
+            </header>
+            <div>
+              <CheeseForm />
+            </div>
+            <div className="test"></div>
+            <div className="cheese-res-button">
+              <button onClick={handleCheeseRes} className="list-showing-button">
+                Explore more cheese!
+              </button>
+            </div>
           </div>
-          <button onClick={handleCheeseRes}>Explore more cheese!</button>
           <div className="cheese-list">
             <ul>
               {cheeses.map((cheese, key) => {
@@ -44,15 +51,22 @@ export default function App() {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <header className="App-header">
-            <h1>Your Cheese Journal.</h1>
-          </header>
-          <div>
-            <CheeseForm />
-          </div>
-          <button onClick={handleCheeseRes}>Explore more cheese!</button>
-          <div>
-            <p>Cheese results will be displayed below</p>
+          <div className="yellow-display">
+            <header className="App-header">
+              <h1>Your Cheese Journal.</h1>
+            </header>
+            <div>
+              <CheeseForm />
+            </div>
+            <div className="test"></div>
+            <div className="cheese-res-button">
+              <button
+                onClick={handleCheeseRes}
+                className="list-not-showing-button"
+              >
+                Explore more cheese!
+              </button>
+            </div>
           </div>
         </React.Fragment>
       )}
