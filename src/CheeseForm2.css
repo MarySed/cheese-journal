@@ -94,3 +94,7 @@ button:active {
 input::placeholder {
   color: rgba(0, 0, 0, 0.603);
 }
+
+input:focus {
+  outline: none;
+}
