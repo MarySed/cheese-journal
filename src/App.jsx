@@ -14,7 +14,7 @@ export default function App() {
       setCheese(res.data);
       setLoading(false);
       if (loading === false) {
-        console.log(cheeses);
+        //console.log(cheeses);
       }
     });
   }, [loading]);

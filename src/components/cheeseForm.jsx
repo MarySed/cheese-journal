@@ -91,7 +91,7 @@ export default function CheeseForm() {
           </div>
           <input
             type="text"
-            placeholder="Who made dis?"
+            placeholder="Who made it?"
             value={cheeseSrc}
             onChange={handleCheeseSrcChange}
           />

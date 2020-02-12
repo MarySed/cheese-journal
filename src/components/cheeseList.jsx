@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../CheeseList.css";
 
 export default function CheeseList(props) {
-  console.log(props.cheeses);
+  //console.log(props.cheeses);
 
   return (
     <div className="cheese-data">
