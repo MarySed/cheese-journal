@@ -75,7 +75,9 @@ export default function CheeseForm() {
       <h2>THE CHEESE FORM</h2>
       <form onSubmit={handleSubmit} className="formContainer">
         <div className="field">
-          <label>Cheese Name</label>
+          <div className="label">
+            <label>Cheese Name</label>
+          </div>
           <input
             type="text"
             placeholder="Your cheese name?"
@@ -84,7 +86,9 @@ export default function CheeseForm() {
           />
         </div>
         <div className="field">
-          <label>Creamery</label>
+          <div className="label">
+            <label>Creamery</label>
+          </div>
           <input
             type="text"
             placeholder="Who made dis?"
@@ -94,7 +98,9 @@ export default function CheeseForm() {
         </div>
 
         <div className="field">
-          <label>Characteristics</label>
+          <div className="label">
+            <label>Characteristics</label>
+          </div>
           <input
             type="text"
             placeholder="Anything unique? Organic cheese is pretty unique."
@@ -133,7 +139,9 @@ export default function CheeseForm() {
           </select>
         </div>
         <div className="field">
-          <label>Cheese Flavor</label>
+          <div className="label">
+            <label>Cheese Flavor</label>
+          </div>
           <input
             className="flavor"
             type="text"

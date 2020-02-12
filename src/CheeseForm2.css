@@ -13,7 +13,7 @@ h2 {
 
 input {
   background-color: transparent;
-  width: 93%;
+  width: 50vw;
   height: 2rem;
   position: relative;
   padding: 0px 16px;
@@ -30,6 +30,7 @@ input {
 
 label {
   min-width: 125px;
+  width: 125px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
