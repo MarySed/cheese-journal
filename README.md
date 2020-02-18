@@ -4,9 +4,11 @@ This project was created during my time as a student at [Code Chrysalis](https:/
 
 ## Introduction
 
-"Cheese Journal" was created as a free and portable alternative to pen & paper cheese journals. You can record all the detals of your favorite cheeses and also access a database of over 900 varieties of cheese to expand your palate.
+"Cheese Journal" was created as a free and portable alternative to pen & paper cheese journals! You can record all the detals of your favorite cheeses and also access a database of over 900 varieties of cheese to expand your palate. The more cheese the better, right?
 
-Currently MVP.
+Created in 48 hours.
+
+![Cheesegif](assets/cheeseapp.gif)
 
 ## Scripts Guide
 
