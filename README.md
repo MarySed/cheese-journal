@@ -1,4 +1,4 @@
-# Cheese Journal
+# Your Cheese Journal
 
 This project was created during my time as a student at [Code Chrysalis](https://www.codechrysalis.io).
 
